@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Show List</h1>
+
+<table>
+    <thead>
+        <td>ID</td>
+        <td>Text</td>
+        <td>Decimal</td>
+    </thead>
+
+    <tr th:each="element: ${list}">
+        <td th:text="${element.id}"></td>
+        <td th:text="${element.text}"></td>
+        <td th:text="${element.decimal}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
